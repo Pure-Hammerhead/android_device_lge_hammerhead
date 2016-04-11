@@ -333,7 +333,6 @@ static void power_set_interactive(__attribute__((unused)) struct power_module *m
     ALOGV("%s %s", __func__, (on ? "ON" : "OFF"));
     if (on) {
         sync_thread(0);
-        touch_boost();
     } else {
         sync_thread(1);
     }
@@ -347,7 +346,6 @@ static void power_hint( __attribute__((unused)) struct power_module *module,
     switch (hint) {
         case POWER_HINT_INTERACTION:
             ALOGV("POWER_HINT_INTERACTION");
-            touch_boost();
             break;
 #if 0
         case POWER_HINT_VSYNC:
