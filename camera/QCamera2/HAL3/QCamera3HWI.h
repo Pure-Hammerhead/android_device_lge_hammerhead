@@ -134,7 +134,7 @@ public:
     int flush();
 
     int setFrameParameters(camera3_capture_request_t *request,
-            cam_stream_ID_t streamID);
+            cam_stream_ID_t streamID, int blob_request);
     int setReprocParameters(camera3_capture_request_t *request);
     int translateToHalMetadata(const camera3_capture_request_t *request,
             metadata_buffer_t *parm);
@@ -293,6 +293,8 @@ private:
 #endif
     uint32_t mMetaFrameCount;
     const camera_module_callbacks_t *mCallbacks;
+
+    cam_stream_size_info_t mStreamConfigInfo;
 
     static const QCameraMap EFFECT_MODES_MAP[];
     static const QCameraMap WHITE_BALANCE_MODES_MAP[];
