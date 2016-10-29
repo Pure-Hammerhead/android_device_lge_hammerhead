@@ -356,9 +356,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.legacyencoder=true \
     media.stagefright.less-secure=true
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    media.stagefright.codecremote=false
-
 # Input resampling configuration
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.input.noresample=1
