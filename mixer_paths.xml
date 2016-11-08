@@ -452,9 +452,9 @@
     <path name="rec-stereo-mic">
         <path name="sub-main-mic" />
         <ctl name="ADC1 Volume" value="19" />
-        <ctl name="DEC6 Volume" value="98" />
+        <ctl name="DEC6 Volume" value="88" />
         <ctl name="ADC3 Volume" value="19" />
-        <ctl name="DEC4 Volume" value="98" />
+        <ctl name="DEC4 Volume" value="88" />
     </path>
 
     <path name="voice-dmic-ef-tmus">
