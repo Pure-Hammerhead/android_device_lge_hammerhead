@@ -13,3 +13,6 @@ allow mediaserver system_file:file execmod;
 
 # needed for widevine classic
 allow mediaserver tee_device:chr_file { ioctl open read write };
+
+# camera.proxy
+allow mediaserver cameraproxy_service:service_manager find;
