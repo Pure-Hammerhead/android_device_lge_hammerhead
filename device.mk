@@ -172,6 +172,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     keystore.msm8974
 
+PRODUCT_PACKAGES += \
+    power.msm8974
+
 # GPS configuration
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/gps.conf:system/etc/gps.conf
@@ -216,6 +219,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     bdAddrLoader
+
+PRODUCT_PACKAGES += \
+    power.hammerhead
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
