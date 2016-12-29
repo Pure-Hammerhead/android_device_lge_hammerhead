@@ -19,12 +19,6 @@
 #
 # Everything in this directory will become public
 
-# Kernel Inline
-TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
-TARGET_KERNEL_CONFIG := unicornblood_defconfig
-TARGET_VARIANT_CONFIG := unicornblood_defconfig
-TARGET_SELINUX_CONFIG := unicornblood_defconfig
-
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/init.hammerhead.rc:root/init.hammerhead.rc \
     device/lge/hammerhead/init.hammerhead.usb.rc:root/init.hammerhead.usb.rc \
